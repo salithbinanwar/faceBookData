@@ -25,6 +25,7 @@ mongoose.connect(process.env.MONGO_URI, {
 
 // show data
 app.use('/allData', fbData)
+// hello
 
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, './build/index.html'));
